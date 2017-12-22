@@ -1,0 +1,7 @@
+python codify-sentences.py D:\programming\python\thesis\data D:\programming\python\thesis\data\preprocessed_text D:\programming\python\thesis\data\vocabulary.txt D:\programming\python\thesis\data\encoded
+
+python interactive.py D:\programming\python\thesis\data D:\programming\python\thesis\data\vocabulary.txt
+
+python train-autoencoder.py D:\programming\python\thesis\data D:\programming\python\thesis\data\vocabulary.txt D:\programming\python\thesis\data\train-data.npz D:\programming\python\thesis\data\valid-data.npz -e=3 -n=20 -u=20 -b=32 -i=200 --mono
+
+python prepare-data.py D:\programming\python\thesis\data\preprocessed_text D:\programming\python\thesis\data --min-freq=5
